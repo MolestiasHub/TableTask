@@ -1,0 +1,34 @@
+@use "../../../../fonts.scss" as fonts;
+
+.rating {
+  @include fonts.secondary;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid;
+  line-height: 100%;
+}
+
+.rating--perfect {
+  composes: rating;
+  background-color: #dbf8ef;
+  border-color: #28a879;
+  color: #28a879;
+}
+
+.rating--normal {
+  composes: rating;
+  background-color: #d8e4fb;
+  border-color: #adbfdf;
+}
+
+.rating--bad {
+  composes: rating;
+  background-color: #fee9ef;
+  border-color: #ea1a4f;
+  color: #ea1a4f;
+}
+
+.error{
+  @include fonts.secondary;
+  color: #ea1a4f;
+}

@@ -1,0 +1,17 @@
+@use "../../palette.module.scss" as palette;
+@use "../../fonts.scss" as fonts;
+
+.header {
+  @include fonts.secondary;
+  color: palette.$text-secondary;
+}
+
+.table {
+  background-color: white;
+  border-radius: 4px;
+  padding-left: 24px;
+  scrollbar-width: 0;
+  > :first-child {
+    border-bottom: none;
+  }
+}

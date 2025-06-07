@@ -1,0 +1,278 @@
+{
+  "result": [
+    {
+      "id": 11059302,
+      "partnership_id": "578",
+      "partner_data": {
+        "id": "578",
+        "name": "\u041e\u041e\u041e \"\u0413\u0420\u0423\u0417\u0427\u0418\u041a\u041e\u0412-\u0421\u0415\u0420\u0412\u0418\u0421 \u0421\u041f\u0411\"",
+        "phone": "74951205096"
+      },
+      "date": "2025-06-04 17:34:46",
+      "date_notime": "2025-06-04",
+      "time": 109,
+      "from_number": "792**07**",
+      "from_extension": "",
+      "to_number": "sip**ha**",
+      "to_extension": "103",
+      "is_skilla": 0,
+      "status": "\u0414\u043e\u0437\u0432\u043e\u043d\u0438\u043b\u0441\u044f",
+      "record": "MToxMDA2NzYxNToxNDMwMDM3NzExNzow",
+      "line_number": "sip**se**",
+      "line_name": "",
+      "in_out": 1,
+      "from_site": 0,
+      "source": "",
+      "errors": [
+        "\u0421\u043a\u0440\u0438\u043f\u0442 \u043d\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d"
+      ],
+      "disconnect_reason": "",
+      "results": [
+        {
+          "type": "is_new",
+          "title": "\u041d\u043e\u0432\u044b\u0439",
+          "tooltip": ""
+        }
+      ],
+      "stages": [],
+      "abuse": [],
+      "contact_name": "",
+      "contact_company": "",
+      "person_id": 3487,
+      "person_name": "**",
+      "person_surname": "**",
+      "person_avatar": "https://lk.skilla.ru/img/noavatar.jpg",
+      "candidate_id": 0,
+      "candidate_name": "",
+      "candidate_link": "",
+      "candidate_vacancy_name": ""
+    },
+    {
+      "id": 11059274,
+      "partnership_id": "578",
+      "partner_data": {
+        "id": "578",
+        "name": "\u041e\u041e\u041e \"\u0413\u0420\u0423\u0417\u0427\u0418\u041a\u041e\u0412-\u0421\u0415\u0420\u0412\u0418\u0421 \u0421\u041f\u0411\"",
+        "phone": "74951205096"
+      },
+      "date": "2025-06-04 17:09:50",
+      "date_notime": "2025-06-04",
+      "time": 26,
+      "from_number": "793**67**",
+      "from_extension": "",
+      "to_number": "sip**ha**",
+      "to_extension": "103",
+      "is_skilla": 0,
+      "status": "\u0414\u043e\u0437\u0432\u043e\u043d\u0438\u043b\u0441\u044f",
+      "record": "MToxMDA2NzYxNToxNDMwMDM3NzExNzow",
+      "line_number": "749**20**",
+      "line_name": "",
+      "in_out": 1,
+      "from_site": 0,
+      "source": "Yandex",
+      "errors": [],
+      "disconnect_reason": "",
+      "results": [],
+      "stages": [],
+      "abuse": [],
+      "contact_name": "\u0421\u0435\u0440\u0433\u0435\u0439",
+      "contact_company": "\u041e\u041e\u041e \"\u0414\u042d\u0421\u041a\u041e\u041c\"",
+      "person_id": 3487,
+      "person_name": "**",
+      "person_surname": "**",
+      "person_avatar": "https://lk.skilla.ru/img/noavatar.jpg",
+      "candidate_id": 0,
+      "candidate_name": "",
+      "candidate_link": "",
+      "candidate_vacancy_name": ""
+    },
+    {
+      "id": 11059231,
+      "partnership_id": "578",
+      "partner_data": {
+        "id": "578",
+        "name": "\u041e\u041e\u041e \"\u0413\u0420\u0423\u0417\u0427\u0418\u041a\u041e\u0412-\u0421\u0415\u0420\u0412\u0418\u0421 \u0421\u041f\u0411\"",
+        "phone": "74951205096"
+      },
+      "date": "2025-06-04 16:41:04",
+      "date_notime": "2025-06-04",
+      "time": 317,
+      "from_number": "796**69**",
+      "from_extension": "",
+      "to_number": "sip**ha**",
+      "to_extension": "103",
+      "is_skilla": 0,
+      "status": "\u0414\u043e\u0437\u0432\u043e\u043d\u0438\u043b\u0441\u044f",
+      "record": "MToxMDA2NzYxNToxNDMwMDM3NzExNzow",
+      "line_number": "749**20**",
+      "line_name": "",
+      "in_out": 1,
+      "from_site": 0,
+      "source": "Yandex",
+      "errors": [
+        "\u0421\u043a\u0440\u0438\u043f\u0442 \u043d\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d"
+      ],
+      "disconnect_reason": "",
+      "results": [
+        {
+          "type": "is_new",
+          "title": "\u041d\u043e\u0432\u044b\u0439",
+          "tooltip": ""
+        }
+      ],
+      "stages": [],
+      "abuse": [],
+      "contact_name": "\u0414\u0430\u0440\u044c\u044f",
+      "contact_company": "",
+      "person_id": 3487,
+      "person_name": "**",
+      "person_surname": "**",
+      "person_avatar": "https://lk.skilla.ru/img/noavatar.jpg",
+      "candidate_id": 0,
+      "candidate_name": "",
+      "candidate_link": "",
+      "candidate_vacancy_name": ""
+    },
+    {
+      "id": 11059203,
+      "partnership_id": "578",
+      "partner_data": {
+        "id": "578",
+        "name": "\u041e\u041e\u041e \"\u0413\u0420\u0423\u0417\u0427\u0418\u041a\u041e\u0412-\u0421\u0415\u0420\u0412\u0418\u0421 \u0421\u041f\u0411\"",
+        "phone": "74951205096"
+      },
+      "date": "2025-06-04 16:28:59",
+      "date_notime": "2025-06-04",
+      "time": 0,
+      "from_number": "792**01**",
+      "from_extension": "",
+      "to_number": "sip**r_**",
+      "to_extension": "671",
+      "is_skilla": 0,
+      "status": "\u041d\u0435 \u0434\u043e\u0437\u0432\u043e\u043d\u0438\u043b\u0441\u044f",
+      "record": "",
+      "line_number": "sip**se**",
+      "line_name": "",
+      "in_out": 1,
+      "from_site": 0,
+      "source": "",
+      "errors": [],
+      "disconnect_reason": "\u0412\u044b\u0437\u043e\u0432 \u043d\u0435 \u043f\u043e\u043b\u0443\u0447\u0438\u043b \u043e\u0442\u0432\u0435\u0442\u0430 \u0432 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u043e\u0436\u0438\u0434\u0430\u043d\u0438\u044f",
+      "results": [],
+      "stages": [
+        {
+          "person_name": "\u0422\u0430\u0442\u044c\u044f\u043d\u0430",
+          "person_surname": "\u041c\u0438\u0445\u0430\u043b\u043a\u043e\u0432\u0438\u0447",
+          "person_mango_phone": "671",
+          "duration": "10",
+          "disconnect_reason": "\u0412\u044b\u0437\u043e\u0432 \u043d\u0435 \u043f\u043e\u043b\u0443\u0447\u0438\u043b \u043e\u0442\u0432\u0435\u0442\u0430 \u0432 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u043e\u0436\u0438\u0434\u0430\u043d\u0438\u044f"
+        }
+      ],
+      "abuse": [],
+      "contact_name": "",
+      "contact_company": "",
+      "person_id": 4730,
+      "person_name": "**",
+      "person_surname": "**",
+      "person_avatar": "https://lk.skilla.ru/img/noavatar.jpg",
+      "candidate_id": 0,
+      "candidate_name": "",
+      "candidate_link": "",
+      "candidate_vacancy_name": ""
+    },
+    {
+      "id": 11059044,
+      "partnership_id": "578",
+      "partner_data": {
+        "id": "578",
+        "name": "\u041e\u041e\u041e \"\u0413\u0420\u0423\u0417\u0427\u0418\u041a\u041e\u0412-\u0421\u0415\u0420\u0412\u0418\u0421 \u0421\u041f\u0411\"",
+        "phone": "74951205096"
+      },
+      "date": "2025-06-04 15:11:13",
+      "date_notime": "2025-06-04",
+      "time": 66,
+      "from_number": "796**74**",
+      "from_extension": "",
+      "to_number": "sip**ha**",
+      "to_extension": "103",
+      "is_skilla": 0,
+      "status": "\u0414\u043e\u0437\u0432\u043e\u043d\u0438\u043b\u0441\u044f",
+      "record": "MToxMDA2NzYxNToxNDMwMDM3NzExNzow",
+      "line_number": "sip**se**",
+      "line_name": "",
+      "in_out": 1,
+      "from_site": 0,
+      "source": "",
+      "errors": [
+        "\u0421\u043a\u0440\u0438\u043f\u0442 \u043d\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d"
+      ],
+      "disconnect_reason": "",
+      "results": [
+        {
+          "type": "is_new",
+          "title": "\u041d\u043e\u0432\u044b\u0439",
+          "tooltip": ""
+        }
+      ],
+      "stages": [],
+      "abuse": [],
+      "contact_name": "",
+      "contact_company": "",
+      "person_id": 3487,
+      "person_name": "**",
+      "person_surname": "**",
+      "person_avatar": "https://lk.skilla.ru/img/noavatar.jpg",
+      "candidate_id": 0,
+      "candidate_name": "",
+      "candidate_link": "",
+      "candidate_vacancy_name": ""
+    },
+    {
+      "id": 11058987,
+      "partnership_id": "578",
+      "partner_data": {
+        "id": "578",
+        "name": "\u041e\u041e\u041e \"\u0413\u0420\u0423\u0417\u0427\u0418\u041a\u041e\u0412-\u0421\u0415\u0420\u0412\u0418\u0421 \u0421\u041f\u0411\"",
+        "phone": "74951205096"
+      },
+      "date": "2025-06-04 14:48:53",
+      "date_notime": "2025-06-04",
+      "time": 207,
+      "from_number": "796**74**",
+      "from_extension": "",
+      "to_number": "sip**ha**",
+      "to_extension": "103",
+      "is_skilla": 0,
+      "status": "\u0414\u043e\u0437\u0432\u043e\u043d\u0438\u043b\u0441\u044f",
+      "record": "MToxMDA2NzYxNToxNDMwMDM3NzExNzow",
+      "line_number": "sip**se**",
+      "line_name": "",
+      "in_out": 1,
+      "from_site": 0,
+      "source": "",
+      "errors": [
+        "\u0421\u043a\u0440\u0438\u043f\u0442 \u043d\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d"
+      ],
+      "disconnect_reason": "",
+      "results": [
+        {
+          "type": "is_new",
+          "title": "\u041d\u043e\u0432\u044b\u0439",
+          "tooltip": ""
+        }
+      ],
+      "stages": [],
+      "abuse": [],
+      "contact_name": "",
+      "contact_company": "",
+      "person_id": 3487,
+      "person_name": "**",
+      "person_surname": "**",
+      "person_avatar": "https://lk.skilla.ru/img/noavatar.jpg",
+      "candidate_id": 0,
+      "candidate_name": "",
+      "candidate_link": "",
+      "candidate_vacancy_name": ""
+    }
+  ]
+}

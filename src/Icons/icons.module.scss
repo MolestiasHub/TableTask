@@ -1,0 +1,5 @@
+@use "../palette.module.scss" as palette;
+
+svg:hover {
+  fill: palette.$active;
+}

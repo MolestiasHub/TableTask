@@ -1,0 +1,15 @@
+@use "../../../palette.module.scss" as palette;
+
+.row {
+  width: 100%;
+  height: 64px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: flex-start;
+  border-bottom: 1px solid palette.$border;
+  >:last-child {
+    justify-self: end;
+    margin-right: 20px;
+  }
+}
