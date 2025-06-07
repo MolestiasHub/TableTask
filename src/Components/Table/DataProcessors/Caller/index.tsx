@@ -1,5 +1,5 @@
 import { FC } from "react";
-
+import cn from "./caller.module.scss"
 interface ICaller {
   data: {
     name: string;
@@ -9,9 +9,9 @@ interface ICaller {
 
 const Caller: FC<ICaller> = ({data}) => {
   return (
-    <div>
-      <div>{data.name}</div>
-      <div>+{data.phone}</div>
+    <div className={cn.container}>
+      {data.name && <div className={cn.field}>{data.name}</div>}
+      <div className={data.name?cn["field--second"]:cn.field}>+{data.phone}</div>
     </div>
   );
 };

@@ -7,13 +7,18 @@ interface ISplitter {
 }
 
 const Splitter: FC<ISplitter> = (props) => {
-  const yestarday = new Date()
-  yestarday.setDate(yestarday.getDate()-1)
+  const yestarday = new Date();
+  yestarday.setDate(yestarday.getDate() - 1);
+  const today = dateToString(new Date());
   const date = dateToString(new Date(props.date));
   return (
     <div className={cn.splitter}>
       <span>
-        {dateToString(yestarday) === date ? "Вчера" : props.date.replace(/-/g,".")}
+        {date === today
+          ? "Сегодня"
+          : dateToString(yestarday) === date
+          ? "Вчера"
+          : props.date.replace(/-/g, ".")}
       </span>
       <span className={cn.count}>{props.amount}</span>
     </div>

@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import React, { FC, ReactNode, isValidElement } from "react";
 import cn from "./row.module.scss";
 import useClasses from "@/hooks/useClasses";
 
@@ -8,7 +8,7 @@ interface IRow {
   className?: string;
 }
 
-const TableRow: FC<IRow> = (props) => {
+const TableRow: FC<IRow> = React.memo((props) => {
   const row = useClasses([cn.row, props.className]);
   return (
     <div
@@ -17,9 +17,9 @@ const TableRow: FC<IRow> = (props) => {
         gridTemplateColumns: props.layout,
       }}
     >
-      {props.items.map((i, index) => (i instanceof Element ? i : <div key={index}>{i}</div>))}
+      {props.items.map((i, index) => (isValidElement(i) ? i : <div key={index}>{i}</div>))}
     </div>
   );
-};
+})
 
 export default TableRow;

@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "SFProDisplay";
+  src: local("SFProDisplay"), url("/SF-Pro-Display-Light.otf") format("truetype");
+}
+
 #root {
-  background-color: #F1F4F9;
+  background-color: #f1f4f9;
   width: 100vw;
   min-height: 100vh;
-  font-family: -apple-system, SanFranciscoPro, sans-serif;
+
+  font-family: -apple-system, SFProDisplay, sans-serif;
 }
 
 a {

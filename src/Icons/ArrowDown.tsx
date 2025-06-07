@@ -1,7 +1,9 @@
-import "./icons.module.scss";
+import cn from "./icons.module.scss";
 
 const ArrowDown = () => (
   <svg
+    style={{pointerEvents: "none"}}
+    className={cn.icon}
     width="24"
     height="24"
     viewBox="0 0 24 24"
@@ -14,11 +16,6 @@ const ArrowDown = () => (
         d="M7.41 8.58997L12 13.17L16.59 8.58997L18 9.99997L12 16L6 9.99997L7.41 8.58997Z"
       />
     </g>
-    <defs>
-      <clipPath id="clip0_1_863">
-        <rect width="24" height="24" fill="white" />
-      </clipPath>
-    </defs>
   </svg>
 );
 

@@ -5,6 +5,7 @@
   display: flex;
   align-items: start;
   border-bottom: 1px solid palette.$border;
+  pointer-events: none;
 }
 
 .count {

@@ -6,6 +6,13 @@
   color: palette.$text-secondary;
 }
 
+.sort{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
 .table {
   background-color: white;
   border-radius: 4px;
@@ -13,5 +20,11 @@
   scrollbar-width: 0;
   > :first-child {
     border-bottom: none;
+  }
+  > :not(:first-child) {
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(212, 223, 243, 0.17);
+    }
   }
 }

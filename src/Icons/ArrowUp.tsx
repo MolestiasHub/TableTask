@@ -1,7 +1,9 @@
-import "./icons.module.scss"
+import cn from "./icons.module.scss";
 
 const ArrowUp = () => (
   <svg
+    style={{ pointerEvents: "none" }}
+    className={cn.icon}
     width="24"
     height="24"
     viewBox="0 0 24 24"
@@ -9,9 +11,7 @@ const ArrowUp = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <g clip-path="url(#clip0_1_866)">
-      <path
-        d="M12 8L6 14L7.41 15.41L12 10.83L16.59 15.41L18 14L12 8Z"
-      />
+      <path d="M12 8L6 14L7.41 15.41L12 10.83L16.59 15.41L18 14L12 8Z" />
     </g>
     <defs>
       <clipPath id="clip0_1_866">

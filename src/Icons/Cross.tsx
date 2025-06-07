@@ -1,7 +1,8 @@
-import "./icons.module.scss";
+import cn from "./icons.module.scss";
 
 const Cross = () => (
   <svg
+    className={cn.icon}
     width="15"
     height="15"
     viewBox="0 0 15 15"

@@ -6,7 +6,7 @@ import ArrowUp from "@/Icons/ArrowUp";
 import Cross from "@/Icons/Cross";
 import { useEffect, useRef } from "react";
 
-export type typeDefaultFields = { title: string; isDefault?: boolean };
+export type typeDefaultFields = { title: string ; isDefault?: boolean };
 
 interface ITypeSelector<T extends typeDefaultFields> {
   value: T;
@@ -17,7 +17,6 @@ interface ITypeSelector<T extends typeDefaultFields> {
 const TypeSelector = <T extends typeDefaultFields>(props: ITypeSelector<T>) => {
   const [isOpen, , close, toggle] = useOpenClose();
   const ref = useRef(null);
-
   useEffect(() => {
     const unsub = onClickAway(ref, close);
     return () => unsub();

@@ -37,7 +37,7 @@ const Paginator: FC<IPaginator> = ({ setPaginatorData }) => {
   useEffect(
     () =>
       setPaginatorData(
-        `${type.value!==undefined ? `in_out=${type.value}&` : ""}&date_start=${
+        `${type.value!==undefined ? `?in_out=${type.value}&` : "?"}date_start=${
           date.value.start
         }&date_end=${date.value.finish}`
       ),

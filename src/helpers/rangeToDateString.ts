@@ -16,6 +16,5 @@ export default (start: "3 days" | "week" | "month" | "year") => {
       date.setFullYear(date.getFullYear() - 1);
       break;
   }
-  console.log({ start: dateToString(date), finish: dateToString(new Date()) });
   return { start: dateToString(date), finish: dateToString(new Date()) };
 };

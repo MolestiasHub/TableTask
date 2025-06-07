@@ -1,0 +1,23 @@
+@use "../../../../palette.module.scss";
+
+.field {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+  &--second{
+    composes: field;
+    color: palette.$text-secondary;
+  }
+}
+
+.container{
+    width: 100%;
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

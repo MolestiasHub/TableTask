@@ -16,7 +16,6 @@ interface IDateSelector<T extends typeDateFields> {
 
 const DateSelector = <T extends typeDateFields>(props: IDateSelector<T>) => {
   const [isOpen, , close, toggle] = useOpenClose();
-  let curIndex = 0
   const ref = useRef(null);
 
   useEffect(() => {
@@ -29,22 +28,28 @@ const DateSelector = <T extends typeDateFields>(props: IDateSelector<T>) => {
     close();
   };
 
+  const decreaseRange = () => {
+    const nextIndex = props.values.indexOf(props.value) - 1;
+    props.setValue(
+      props.values[nextIndex <= 0 ? props.values.length - 1 : nextIndex]
+    );
+  };
+
   const increaseRange = () => {
-    if(curIndex===props.values.length-1){
-      curIndex=0
-    } else {
-      curIndex++
-    }
-  }
+    const nextIndex = props.values.indexOf(props.value) + 1;
+    props.setValue(
+      props.values[nextIndex >= props.values.length ? 0 : nextIndex]
+    );
+  };
 
   return (
     <div ref={ref} className={cn["date--selector"]}>
-      <ArrowLeft />
+      <ArrowLeft onClick={decreaseRange} />
       <div onClick={toggle} className={cn["date--value"]}>
         <Calendar />
         {props.value.title}
       </div>
-      <ArrowRight onClick={increaseRange}/>
+      <ArrowRight onClick={increaseRange} />
       {isOpen && (
         <div className={cn["date--selector--drop"]}>
           {props.values.map((i, index) => (
