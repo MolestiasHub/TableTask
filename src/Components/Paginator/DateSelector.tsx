@@ -3,7 +3,7 @@ import cn from "./paginator.module.scss";
 import ArrowLeft from "@/Icons/ArrowLeft";
 import ArrowRight from "@/Icons/ArrowRight";
 import Calendar from "@/Icons/Calendar";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import onClickAway from "@/helpers/onClickAway";
 
 export type typeDateFields = { title: string; isDefault?: boolean };
