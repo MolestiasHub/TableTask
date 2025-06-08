@@ -5,7 +5,7 @@ import TableRow from "./TableRow";
 import Splitter from "./Splitter";
 
 interface ITable {
-  items: Array<{ id: number; splitter?: {date: string, counter: number}; content: Array<ReactNode> }>;
+  items: Array<{ id: number, splitter?: {date: string, counter: number}, content: Array<ReactNode> }>;
   setSort: (val: string) => void;
   layout?: string;
   isLoading?: boolean;

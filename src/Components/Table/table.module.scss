@@ -3,7 +3,8 @@
 
 .header {
   @include fonts.secondary;
-  color: palette.$text-secondary;
+  color: rgba(94, 119, 147, 0.87);
+  z-index: 1;
 }
 
 .sort{
@@ -15,11 +16,10 @@
 
 .table {
   background-color: white;
-  border-radius: 4px;
-  padding-left: 24px;
-  scrollbar-width: 0;
-  > :first-child {
-    border-bottom: none;
+  border-radius: 8px;
+  padding: 0 40px 24px;
+  > :last-child {
+    border-bottom: 0;
   }
   > :not(:first-child) {
     cursor: pointer;

@@ -41,7 +41,7 @@ const MainPage: FC = () => {
       <Table
         isLoading={results && isLoading}
         setSort={setSortData}
-        layout="54px 88px 129px 325px 197px 154px auto"
+        layout="54px 88px 129px 325px 197px 146px auto"
         items={mem}
       />
     </div>

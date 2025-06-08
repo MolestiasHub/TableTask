@@ -14,7 +14,7 @@ const TableRow: FC<IRow> = React.memo((props) => {
     <div
       className={row}
       style={{
-        gridTemplateColumns: props.layout,
+        gridTemplateColumns: props.layout
       }}
     >
       {props.items.map((i, index) => (isValidElement(i) ? i : <div key={index}>{i}</div>))}

@@ -1,13 +1,15 @@
 @use "../../../../palette.module.scss" as palette;
 
 .player {
-  width: 352px;
+  box-sizing: border-box;
+  max-width: calc(100% - 44px);
   height: 48px;
   display: flex;
   align-items: center;
   background: palette.$border;
   border-radius: 48px;
   padding-left: 20px;
+  padding-right: 8px;
   gap: 10px;
 }
 
@@ -23,9 +25,8 @@
 }
 
 .player--progress {
-  width: 164px;
+  width: 150px;
   height: 4px;
-  top: 32px;
   border-radius: 50px;
   background-color: #ADBFDF;
 }

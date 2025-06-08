@@ -32,10 +32,11 @@ export default function dataMapper(data: Array<any>) {
           status={i.status as CallStatusType}
         />,
         dateToTimeString(new Date(i.date)),
-        <img
+        i.person_avatar && <img
           style={{ width: 32, height: 32, borderRadius: 20 }}
           src={i.person_avatar}
-        ></img>,
+          alt={i.person_surname[0]+i.person_name[0]}
+        />,
         <Caller data={i.partner_data} />,
         <Source
           source={

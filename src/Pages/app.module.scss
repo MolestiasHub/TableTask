@@ -4,7 +4,7 @@
 .root {
   @include fonts.primary;
   box-sizing: border-box;
-  padding: 80px 240px;
+  padding: 80px 240px 120px;
   width: 100%;
   min-height: 100vh;
   overflow-y: hidden;

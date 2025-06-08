@@ -10,9 +10,8 @@
   border-bottom: 1px solid palette.$border;
   box-sizing: border-box;
   padding: 12px 0;
-  gap: 2px;
-  >:last-child {
+  > :last-child {
     justify-self: end;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 }

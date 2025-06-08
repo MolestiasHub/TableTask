@@ -20,7 +20,7 @@ type Date = typeDefaultFields & {
 };
 
 const dates: Array<Date> = [
-  { title: "3 Дня", isDefault: true, value: rangeToDateString("3 days") },
+  { title: "3 дня", isDefault: true, value: rangeToDateString("3 days") },
   { title: "Неделя", isDefault: true, value: rangeToDateString("week") },
   { title: "Месяц", isDefault: false, value: rangeToDateString("month") },
   { title: "Год", isDefault: false, value: rangeToDateString("year") },
