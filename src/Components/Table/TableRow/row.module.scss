@@ -1,17 +1,33 @@
 @use "../../../palette.module.scss" as palette;
 
 .row {
-  width: 100%;
   min-height: 64px;
   display: grid;
+  position: relative;
   grid-auto-flow: column;
   align-items: center;
   justify-items: flex-start;
-  border-bottom: 1px solid palette.$border;
   box-sizing: border-box;
-  padding: 12px 0;
+  padding: 12px 40px;
+  &::after{
+    background-color: #eaf0fa;
+    content: "";
+    height: 1px;
+    left: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
   > :last-child {
     justify-self: end;
-    margin-right: 40px;
+  }
+  &:hover {
+    > :last-child {
+      display: none;
+    }
+    > :nth-last-child(2) {
+      display: flex;
+      justify-self: end;
+    }
   }
 }

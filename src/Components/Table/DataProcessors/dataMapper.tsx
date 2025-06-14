@@ -9,19 +9,18 @@ import Source from "./Source";
 import dateToString from "@/helpers/dateToString";
 
 export default function dataMapper(data: Array<any>) {
-  if (!data) return [];
+  if (!data || data.length === 0) return [];
   let currentDate =
     data[0].date_notime !== dateToString(new Date()) ? "" : data[0].date_notime;
   return data.map((i, index) => {
     let splitter = undefined;
     if (currentDate !== i.date_notime) {
-      
       currentDate = i.date_notime;
       let counter = 0;
       data.forEach((item) => {
         if (item.date_notime === i.date_notime) counter++;
       });
-      splitter = {date: i.date_notime, counter};
+      splitter = { date: i.date_notime, counter };
     }
     return {
       id: i.id,
@@ -32,11 +31,13 @@ export default function dataMapper(data: Array<any>) {
           status={i.status as CallStatusType}
         />,
         dateToTimeString(new Date(i.date)),
-        i.person_avatar && <img
-          style={{ width: 32, height: 32, borderRadius: 20 }}
-          src={i.person_avatar}
-          alt={i.person_surname[0]+i.person_name[0]}
-        />,
+        i.person_avatar && (
+          <img
+            style={{ width: 32, height: 32, borderRadius: 20 }}
+            src={i.person_avatar}
+            alt={i.person_surname[0] + i.person_name[0]}
+          />
+        ),
         <Caller data={i.partner_data} />,
         <Source
           source={
@@ -46,15 +47,12 @@ export default function dataMapper(data: Array<any>) {
           }
         />,
         i.status === "Дозвонился" ? <Rating error={i.errors[0]} /> : "",
-        i.time && i.record_id ? (
-          <Player
-            recordTime={callLengthToString(i.time)}
-            partnerId={i.partnership_id}
-            audioId={i.record_id}
-          />
-        ) : (
-          callLengthToString(i.time)
-        ),
+         <Player
+          isFirst={index===0}
+          recordTime={i.time}
+          partnerId={i.partnership_id}
+          audioId={i.record_id}
+        />,
       ],
     };
   });

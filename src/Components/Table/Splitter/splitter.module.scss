@@ -1,13 +1,21 @@
 @use "../../../palette.module.scss" as palette;
 
 .splitter {
-  padding: 40px 0 16px 0;
+  padding: 40px 40px 16px 40px;
   display: flex;
   align-items: start;
-  border-bottom: 1px solid palette.$border;
+  position: relative;
   pointer-events: none;
   border-top: 1px solid white;
-  margin-top: -1px;
+  &::after{
+    background-color: #eaf0fa;
+    content: "";
+    height: 1px;
+    left: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .count {

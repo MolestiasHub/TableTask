@@ -5,6 +5,7 @@ import ArrowRight from "@/Icons/ArrowRight";
 import Calendar from "@/Icons/Calendar";
 import { useEffect, useRef } from "react";
 import onClickAway from "@/helpers/onClickAway";
+import DatePicker from "./DatePicker";
 
 export type typeDateFields = { title: string; isDefault?: boolean };
 
@@ -15,7 +16,7 @@ interface IDateSelector<T extends typeDateFields> {
 }
 
 const DateSelector = <T extends typeDateFields>(props: IDateSelector<T>) => {
-  const [isOpen, , close, toggle] = useOpenClose();
+  const [isOpen, ,close, toggle] = useOpenClose();
   const ref = useRef(null);
 
   useEffect(() => {
@@ -67,6 +68,7 @@ const DateSelector = <T extends typeDateFields>(props: IDateSelector<T>) => {
               {i.title}
             </div>
           ))}
+          <DatePicker setDate={setter}/>
         </div>
       )}
     </div>

@@ -1,9 +1,11 @@
+import { SVGProps } from "react";
 import cn from "./icons.module.scss";
 
-export default function Download() {
+export default function Download(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      className={cn.icon}
+      className={props.className ? props.className : cn.icon}
+      {...props}
       width="24"
       height="24"
       viewBox="0 0 24 24"

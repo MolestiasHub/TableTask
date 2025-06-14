@@ -1,5 +1,4 @@
 import { FC, useEffect, useState } from "react";
-import TableRow from "../TableRow";
 import cn from "../table.module.scss";
 import SortingField from "./SortingField";
 
@@ -12,26 +11,24 @@ interface IHeader {
 
 const TableHeader: FC<IHeader> = (props) => {
   const [sort, setSort] = useState<SortVal>({ field: "date", val: "DESC" });
-  console.log(sort)
   useEffect(
     () => props.setSort(`&sort_by=${sort.field}&order=${sort.val}`),
     [sort, props.setSort]
   );
 
   return (
-    <TableRow
+    <div
       className={cn.header}
-      layout={props.layout}
-      items={[
-        "Тип",
-        <SortingField setValue={setSort} value='date' title="Время" />,
-        "Сотрудник",
-        "Звонок",
-        "Источник",
-        "Оценка",
-        <SortingField setValue={setSort} value="duration" title="Длительность" />,
-      ]}
-    />
+      style={{gridTemplateColumns: props.layout}}
+    >
+        <div>Тип</div>
+        <SortingField setValue={setSort} value='date' title="Время" />
+        <div>Сотрудник</div>
+        <div>Звонок</div>
+        <div>Источник</div>
+        <div>Оценка</div>
+        <SortingField setValue={setSort} value="duration" title="Длительность" />
+    </div>
   );
 };
 
