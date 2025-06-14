@@ -1,6 +1,5 @@
 import { CallType as TypeOfCall, CallStatusType } from "@/Pages/types";
 import dateToTimeString from "@/helpers/dateToTimeString";
-import callLengthToString from "@/helpers/callLengthToString";
 import Caller from "./Caller";
 import CallType from "./CallType";
 import Rating from "./Rating";

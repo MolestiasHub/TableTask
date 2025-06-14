@@ -17,7 +17,6 @@ const Player: FC<IPlayer> = ({ recordTime, audioId, partnerId, isFirst }) => {
   const [isPlaying, start, stop] = useOpenClose(false);
   const [currentTime, setCurrentTime] = useState(0);
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [url, setUrl] = useState("");
 
   const handleTimeUpdate = () => {
     if (audioRef.current) setCurrentTime(audioRef.current.currentTime);
